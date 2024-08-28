@@ -1,13 +1,12 @@
 .banner {
-  margin-top: -10vh;
-  margin-bottom: 80px;
+
   color: aliceblue;
-  height: 80vh;
+  height: 480px;
   object-fit: contain;
 }
 .banner_content {
   margin-left: 30px;
-  padding-top: 300px;
+  padding-top: 250px;
   height: 190px;
 }
 .banner_title {
