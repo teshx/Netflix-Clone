@@ -1,0 +1,44 @@
+.Footer_outer_container {
+  background-color: rgb(20, 20, 20);
+  color: rgb(173, 173, 173);
+  list-style: none;
+  font-family: sans-serif;
+  align-items: center;
+}
+.Footer_inner_container {
+  width: 880px;
+  margin: 0 auto;
+  list-style: none;
+}
+.footer_icon ul {
+  display: flex;
+  padding: 4px;
+  list-style: none;
+  padding: 5px;
+}
+.footer_icon ul li {
+  padding-right: 30px;
+}
+.Footer_data {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+  list-style: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.Footer_data div ul {
+  list-style: none;
+}
+.service_code p {
+  width: 100px;
+  border: 2px solid rgb(173, 173, 173);
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+}
+.copy_write {
+  font-size: 13px;
+  margin: 5px;
+  padding-bottom: 4px;
+}
