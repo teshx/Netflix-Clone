@@ -4,7 +4,7 @@ import requests from "../../../Utils/requests.js";
 function Rowlist() {
   return (
     <>
-      <Row title="Trending Noe" fechUrl={requests.fetchTrending} isLargeRow />
+      <Row title="Trending Now" fechUrl={requests.fetchTrending} isLargeRow />
       <Row title="Top reated" fechUrl={requests.fetchTopRatedMovies} />
       <Row title="action Movie" fechUrl={requests.fetchActionMovies} />
       <Row title="Comedy Movie" fechUrl={requests.fetchComedyMovies} />
