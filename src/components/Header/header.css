@@ -5,26 +5,25 @@
 
 
 .Header_outer_container {
-  position: static;
+  position: fixed;
   top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(148, 132, 132); */
   background-color: rgb(20, 20, 20);
-  /* background-color: transparent; */
-  /* color: aliceblue; */
+  background-color: transparent;
   height: 10vh;
-  /* color: rgb(24, 7, 7); */
+  color: rgb(24, 7, 7);
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 1;
-  /* background-color: red; */
   font-family: sans-serif;
 
 }
-.nav-blach {
+.nav-black {
   background-color: rgb(20, 20, 20);
+  color: aliceblue;
 }
 .logos {
   width: 120px;
