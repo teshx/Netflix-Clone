@@ -1,11 +1,63 @@
-import React from 'react'
-
+import React, { useEffect, useState } from "react";
+import axios from "../../Utils/axios.js";
+import requests from "../../Utils/requests.js";
+import './banner.css'
 function Banner() {
+  const [movie, setmovies] = useState({});
+
+  const trancate = (str, n) => {
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+  };
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const request = await axios.get(requests.fetchNetflixOriginals);
+        setmovies(
+          request.data.results[
+            Math.floor(Math.random() * request.data.results.length)
+          ]
+        );
+        console.log(movie);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+    // console.log(movie);
+  }, []);
+
+  const baseUrl = "https://image.tmdb.org/t/p/original";
+  const imagePath = movie?.backdrop_path;
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <div
+        className="banner"
+        style={{
+          backgroundSize: "cover",
+          backgroundImage: `url(${baseUrl}${imagePath})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="banner_content">
+          <h1 className="banner_title">
+            {movie?.title || movie?.name || movie.origional_name}
+          </h1>
+
+          <div className="banner_butttons">
+            <button className="banner_button play">Play</button>
+            <button className="banner_button">My list</button>
+          </div>
+
+          <h3 className="banner_description">
+            {trancate(movie?.overview, 150)}
+          </h3>
+        </div>
+
+        <div className="banner_feadeButton" />
+      </div>
+    </>
+  );
 }
 
-export default Banner
+export default Banner;
+// https://image.tmdb.org/t/p/orgionals'/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg

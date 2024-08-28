@@ -10,9 +10,9 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 function Header() {
   return (
     <>
-      <div class="Header_outer_container">
-        <div class="Header_container">
-          <div class="Header_left">
+      <div className="Header_outer_container">
+        <div className="Header_container">
+          <div className="Header_left">
             <ul>
               <li>
                 <img className="logos" src={logos} alt="Netflix-lofo" />
@@ -25,7 +25,7 @@ function Header() {
               <li>Browser by Language</li>
             </ul>
           </div>
-          <div class="Header-right">
+          <div className="Header-right">
             <ul>
               <li>
                 <SearchIcon />
