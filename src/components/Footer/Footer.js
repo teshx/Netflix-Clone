@@ -23,32 +23,88 @@ function Footer() {
         <div className="Footer_data">
           <div>
             <ul>
-              <li>Audio Description</li>
-              <li>Invester relation</li>
-              <li>Legal notice</li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Audio Description
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Invester relation
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Legal notice
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <ul>
-              <li>Help center</li>
-              <li>Jops</li>
-              <li>Cookie Preferences</li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Help center
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Jops
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Cookie Preferences
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <ul>
-              <li>Gift Card</li>
-              <li>Terms of use</li>
-              <li> Corporate information</li>
+              <li>
+                {" "}
+                <a className="footer_link" href=""></a>Gift Card
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href=""></a>Terms of use
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Corporate information
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <ul>
-              <li>Media center</li>
-              <li>Privacy</li>
-              <li> Contact us</li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Media center
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a className="footer_link" href="">
+                  Contact us
+                </a>
+              </li>
             </ul>
           </div>
         </div>

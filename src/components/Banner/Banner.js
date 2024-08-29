@@ -38,22 +38,22 @@ function Banner() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="banner_content">
-          <h1 className="banner_title">
+        <div className="banner__contents">
+          <h1 className="banner__title">
             {movie?.title || movie?.name || movie.origional_name}
           </h1>
 
           <div className="banner_butttons">
-            <button className="banner_button play">Play</button>
+            <button className="banner__button play">Play</button>
             <button className="banner_button">My list</button>
           </div>
 
-          <h3 className="banner_description">
+          <h3 className="banner__description">
             {trancate(movie?.overview, 150)}
           </h3>
         </div>
 
-        <div className="banner_feadeButton" />
+        <div className="banner_fadeButtom" />
       </div>
     </>
   );

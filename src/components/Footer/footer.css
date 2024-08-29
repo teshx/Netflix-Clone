@@ -4,9 +4,10 @@
   list-style: none;
   font-family: sans-serif;
   align-items: center;
+  width: 100%;
 }
 .Footer_inner_container {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
   list-style: none;
 }
@@ -42,3 +43,19 @@
   margin: 5px;
   padding-bottom: 4px;
 }
+
+.Footer_data div ul a{
+  list-style: none;
+  text-decoration: none;
+	color: white;
+}
+
+
+
+/* @media (min-width: 758px) {
+  .footer_link {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+} */
