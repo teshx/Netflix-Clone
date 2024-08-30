@@ -31,6 +31,10 @@
 .Footer_data div ul {
   list-style: none;
 }
+.Footer_data,
+.footer_icon {
+  margin: 10px;
+}
 .service_code p {
   width: 100px;
   border: 2px solid rgb(173, 173, 173);
@@ -40,17 +44,15 @@
 }
 .copy_write {
   font-size: 13px;
-  margin: 5px;
+  padding: 5px;
   padding-bottom: 4px;
 }
 
-.Footer_data div ul a{
+.Footer_data div ul a {
   list-style: none;
   text-decoration: none;
-	color: white;
+  color: white;
 }
-
-
 
 /* @media (min-width: 758px) {
   .footer_link {
